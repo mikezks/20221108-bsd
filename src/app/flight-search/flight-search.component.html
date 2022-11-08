@@ -42,7 +42,11 @@
       <tr
         *ngFor="let flight of flights"
         [class.table-active]="selectedFlight === flight">
-        <td>{{ flight.id }}</td>
+        <td>
+          <span class="badge badge-pill badge-info">
+            {{ flight.id }}
+          </span>
+        </td>
         <td>{{ flight.from }}</td>
         <td>{{ flight.to }}</td>
         <td>{{ flight.date | date:'dd.MM.yyyy HH:mm' }}</td>
