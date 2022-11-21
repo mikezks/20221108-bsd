@@ -9,6 +9,7 @@ import { FlightSearchComponent } from './flight-search/flight-search.component';
 import { FormsModule } from '@angular/forms';
 import { FlightService } from './flight-search/flight.service';
 import { DefaultFlightService } from './flight-search/default-flight.service';
+import { BASE_URL } from './app.tokens';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { DefaultFlightService } from './flight-search/default-flight.service';
     FlightSearchComponent
   ],
   providers: [
-    { provide: FlightService, useClass: DefaultFlightService }
+    // { provide: FlightService, useClass: DefaultFlightService },
+    // { provide: BASE_URL, useValue: 'http://wrong.url/' }
   ],
   bootstrap: [
     AppComponent
