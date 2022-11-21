@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FlightSearchComponent } from './flight-search/flight-search.component';
 import { FormsModule } from '@angular/forms';
+import { FlightService } from './flight-search/flight.service';
+import { DefaultFlightService } from './flight-search/default-flight.service';
 
 @NgModule({
   imports: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FlightSearchComponent
   ],
-  providers: [],
+  providers: [
+    { provide: FlightService, useClass: DefaultFlightService }
+  ],
   bootstrap: [
     AppComponent
   ]
