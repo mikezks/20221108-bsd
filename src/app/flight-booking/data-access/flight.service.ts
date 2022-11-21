@@ -2,8 +2,8 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { BASE_URL } from '../app.tokens';
-import { Flight } from '../entities/flight';
+import { BASE_URL } from '../../app.tokens';
+import { Flight } from '../../entities/flight';
 import { DefaultFlightService } from './default-flight.service';
 import { DummyFlightService } from './dummy-flight.service';
 
