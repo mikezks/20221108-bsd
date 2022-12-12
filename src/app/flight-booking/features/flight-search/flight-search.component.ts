@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Flight } from '../../../entities/flight';
 import { FlightService } from '../../data-access/flight.service';
 
@@ -15,6 +17,10 @@ export class FlightSearchComponent implements OnInit {
   to = 'Graz';
   flights: Flight[] = [];
   selectedFlight: Flight | undefined;
+  basket: Record<number, boolean> = {
+    3: true,
+    5: true
+  };
 
   constructor(private flightService: FlightService) { }
 
