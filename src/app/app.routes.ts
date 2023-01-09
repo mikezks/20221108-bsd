@@ -10,5 +10,10 @@ export const APP_ROUTES: Routes = [
     {
         path: 'home',
         component: HomeComponent
+    },
+    {
+        path: 'flight-booking',
+        loadChildren: () => import('./flight-booking/flight-booking.module')
+          .then(esm => esm.FlightBookingModule)
     }
 ]

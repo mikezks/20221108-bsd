@@ -1,12 +1,11 @@
-import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
-import { FlightBookingModule } from './flight-booking/flight-booking.module';
 import { APP_ROUTES } from './app.routes';
+import { CoreModule } from './core/core.module';
 import { TestmeComponent } from './testme/testme.component';
 
 @NgModule({
@@ -15,7 +14,7 @@ import { TestmeComponent } from './testme/testme.component';
     HttpClientModule,
     RouterModule.forRoot(APP_ROUTES),
     CoreModule,
-    FlightBookingModule
+    // FlightBookingModule
   ],
   declarations: [
     AppComponent,
