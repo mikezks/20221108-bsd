@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { FlightBookingModule } from './flight-booking/flight-booking.module';
 import { APP_ROUTES } from './app.routes';
+import { TestmeComponent } from './testme/testme.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { APP_ROUTES } from './app.routes';
     FlightBookingModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    TestmeComponent
   ],
   providers: [
   ],

@@ -102,5 +102,11 @@
 				}
 			}
 		}
-	}
+	},
+  "schematics": {
+    "@schematics/angular:component": {
+      "inlineTemplate": true,
+      "inlineStyle": true
+    }
+  }
 }
