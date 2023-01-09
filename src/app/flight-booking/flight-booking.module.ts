@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlightSearchComponent } from './features/flight-search/flight-search.component';
@@ -14,7 +15,8 @@ import { FlightEditComponent } from './features/flight-edit/flight-edit.componen
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [
     FlightSearchComponent
